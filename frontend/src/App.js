@@ -1,24 +1,39 @@
-import logo from './logo.svg';
 import './App.css';
+import { useState } from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+import Home from './pages/Home';
+import Login from './pages/Login';
+import Signup from './pages/Signup';
 
-function App() {
+const theme = createTheme({
+  typography: {
+    fontFamily: 'Noto Sans KR, sans-serif',
+  },
+  palette: {
+    primary: {
+      main: '#249c28',
+    },
+  }
+});
+
+const App = () => {
+  const [isLogin, setIsLogin] = useState(false);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+      <Router>
+        <div style={{ height: '100%', width: '100vw'}}>
+        <Routes>
+            <>
+              <Route path="/" element={<Home isLogin={true} setIsLogin={setIsLogin} />} />
+              <Route path="/login" element={<Login setIsLogin={setIsLogin} />} />
+              <Route path="/signUp" element={<Signup/>} />
+            </>
+        </Routes>
+        </div>
+      </Router>
+    </ThemeProvider>
   );
 }
 
