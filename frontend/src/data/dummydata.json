@@ -1,0 +1,202 @@
+[
+  {
+    "id": 1,
+    "title": "경상남도 백엽장학재단 이공계열 장학",
+    "foundation": "백엽장학재단",
+    "views": 1027,
+    "tags": ["대학생", "경상남도"],
+    "date": "D - 4 (24.09.13~9.27)",
+    "isFavorite": false,
+    "isRecommended": true
+  },
+  {
+    "id": 2,
+    "title": "서울장학재단 사회공헌 장학",
+    "foundation": "서울장학재단",
+    "views": 215,
+    "tags": ["고등학생", "서울"],
+    "date": "D - 10 (24.10.01~10.20)",
+    "isFavorite": false,
+    "isRecommended": false
+  },
+  {
+    "id": 3,
+    "title": "충청북도 인재육성재단 일반 장학",
+    "foundation": "충청북도 인재육성재단",
+    "views": 543,
+    "tags": ["대학생", "충청북도"],
+    "date": "D - 3 (24.09.10~9.30)",
+    "isFavorite": false,
+    "isRecommended": true
+  },
+  {
+    "id": 4,
+    "title": "부산장학재단 예체능계열 장학",
+    "foundation": "부산장학재단",
+    "views": 128,
+    "tags": ["대학생", "부산"],
+    "date": "D - 2 (24.09.12~9.20)",
+    "isFavorite": true,
+    "isRecommended": false
+  },
+  {
+    "id": 5,
+    "title": "제주도 우수학생 장학",
+    "foundation": "제주도 장학회",
+    "views": 532,
+    "tags": ["대학생", "제주도"],
+    "date": "D - 8 (24.09.15~10.01)",
+    "isFavorite": false,
+    "isRecommended": false
+  },
+  {
+    "id": 6,
+    "title": "강원도 장학회 지역 장학",
+    "foundation": "강원도 장학회",
+    "views": 650,
+    "tags": ["고등학생", "강원도"],
+    "date": "D - 1 (24.09.14~9.18)",
+    "isFavorite": true,
+    "isRecommended": true
+  },
+  {
+    "id": 7,
+    "title": "광주지역 인재육성 장학",
+    "foundation": "광주 장학회",
+    "views": 190,
+    "tags": ["대학생", "광주"],
+    "date": "D - 5 (24.09.10~9.29)",
+    "isFavorite": false,
+    "isRecommended": false
+  },
+  {
+    "id": 8,
+    "title": "전남 장학재단 과학계열 장학",
+    "foundation": "전남 장학재단",
+    "views": 430,
+    "tags": ["고등학생", "전라남도"],
+    "date": "D - 7 (24.09.08~10.05)",
+    "isFavorite": true,
+    "isRecommended": true
+  },
+  {
+    "id": 9,
+    "title": "울산 장학재단 중등 장학",
+    "foundation": "울산 장학재단",
+    "views": 480,
+    "tags": ["중학생", "울산"],
+    "date": "D - 9 (24.10.02~10.15)",
+    "isFavorite": false,
+    "isRecommended": false
+  },
+  {
+    "id": 10,
+    "title": "대구 장학회 문과 장학",
+    "foundation": "대구 장학회",
+    "views": 300,
+    "tags": ["고등학생", "대구"],
+    "date": "D - 6 (24.09.18~10.01)",
+    "isFavorite": false,
+    "isRecommended": true
+  },
+  {
+    "id": 11,
+    "title": "경북 장학회 공과 장학",
+    "foundation": "경북 장학회",
+    "views": 600,
+    "tags": ["대학생", "경상북도"],
+    "date": "D - 12 (24.10.05~10.10)",
+    "isFavorite": true,
+    "isRecommended": false
+  },
+  {
+    "id": 12,
+    "title": "전북 장학재단 인문계열 장학",
+    "foundation": "전북 장학재단",
+    "views": 280,
+    "tags": ["대학생", "전라북도"],
+    "date": "D - 11 (24.09.19~9.30)",
+    "isFavorite": false,
+    "isRecommended": false
+  },
+  {
+    "id": 13,
+    "title": "서울시 교육청 우수 장학",
+    "foundation": "서울시 교육청",
+    "views": 789,
+    "tags": ["고등학생", "서울"],
+    "date": "D - 10 (24.09.25~10.05)",
+    "isFavorite": true,
+    "isRecommended": false
+  },
+  {
+    "id": 14,
+    "title": "인천 장학회 글로벌 인재 장학",
+    "foundation": "인천 장학회",
+    "views": 340,
+    "tags": ["대학생", "인천"],
+    "date": "D - 8 (24.10.01~10.15)",
+    "isFavorite": false,
+    "isRecommended": true
+  },
+  {
+    "id": 15,
+    "title": "충남 장학재단 환경과학 장학",
+    "foundation": "충남 장학재단",
+    "views": 520,
+    "tags": ["대학생", "충청남도"],
+    "date": "D - 5 (24.09.20~10.01)",
+    "isFavorite": false,
+    "isRecommended": false
+  },
+  {
+    "id": 16,
+    "title": "부산 장학회 IT 장학",
+    "foundation": "부산 장학회",
+    "views": 450,
+    "tags": ["대학생", "부산"],
+    "date": "D - 4 (24.09.21~10.10)",
+    "isFavorite": true,
+    "isRecommended": false
+  },
+  {
+    "id": 17,
+    "title": "경기 지역인재 장학",
+    "foundation": "경기 장학회",
+    "views": 870,
+    "tags": ["고등학생", "경기도"],
+    "date": "D - 3 (24.09.23~10.05)",
+    "isFavorite": true,
+    "isRecommended": true
+  },
+  {
+    "id": 18,
+    "title": "세종시 교육청 인재육성 장학",
+    "foundation": "세종시 교육청",
+    "views": 400,
+    "tags": ["중학생", "세종시"],
+    "date": "D - 2 (24.09.15~9.30)",
+    "isFavorite": false,
+    "isRecommended": false
+  },
+  {
+    "id": 19,
+    "title": "광주 장학재단 예술 장학",
+    "foundation": "광주 장학재단",
+    "views": 410,
+    "tags": ["대학생", "광주"],
+    "date": "D - 6 (24.09.18~10.10)",
+    "isFavorite": false,
+    "isRecommended": false
+  },
+  {
+    "id": 20,
+    "title": "대전 장학회 기술 장학",
+    "foundation": "대전 장학회",
+    "views": 590,
+    "tags": ["고등학생", "대전"],
+    "date": "D - 7 (24.09.16~10.01)",
+    "isFavorite": true,
+    "isRecommended": true
+  }
+]

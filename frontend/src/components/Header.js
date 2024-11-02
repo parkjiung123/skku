@@ -18,11 +18,11 @@ const Header = () => {
 
     return (
         <>
-        <AppBar position="static" elevation={0} >
-            <Toolbar style={{ padding: '15px 100px', justifyContent: 'space-between', backgroundColor: '#fff', color: '#000', textAlign: 'center', alignItems: 'center' }}>
-            <div style={{width: '50px'}}></div>
+        <AppBar position="static" elevation={0} sx={{ backgroundColor: '#FFFFFF' }} >
+            <Toolbar style={{ padding: '15px 100px', justifyContent: 'space-between', backgroundColor: '#fff', color: '#000', textAlign: 'center', alignItems: 'center', marginTop:'30px'}}>
+            <div style={{width: '50px'}}><img src="/SKKU_2.png" alt="SKKU 장학비서" style={{ width: '180px', height: 'auto' }} /></div>
             <div style={{alignItems: 'center', display: 'flex'}}>
-                로고
+                
             </div>
             <div className="right-section" style={{ display: 'flex', alignItems: 'center' }}>
                 {isLogin ? (

@@ -1,12 +1,31 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Container, Tab, Tabs } from '@mui/material';
 import Header from '../components/Header';
 import AllNotices from '../components/Notices/AllNotices';
 import CustomNotices from '../components/Notices/CustomNotices';
 import FavNotices from '../components/Notices/FavNotices';
+import scholarshipsData from '../data/dummydata.json'; // JSON 파일을 불러옵니다
+
 
 const Home = ({ isLogin }) => {
   const [activeTab, setActiveTab] = useState(0);
+  const [scholarships, setScholarships] = useState([]);
+
+  useEffect(() => {
+    // scholarships.json에서 데이터를 로드하여 초기화
+    setScholarships(scholarshipsData);
+  }, []);
+
+  // 관심 장학 여부를 토글하는 함수
+  const toggleFavorite = (id) => {
+    setScholarships((prevScholarships) =>
+      prevScholarships.map((scholarship) =>
+        scholarship.id === id
+          ? { ...scholarship, isFavorite: !scholarship.isFavorite }
+          : scholarship
+      )
+    );
+  };
 
   const handleTabChange = (event, newValue) => {
       setActiveTab(newValue);
@@ -15,7 +34,7 @@ const Home = ({ isLogin }) => {
   return (
     <div>
       <Header isLogin={isLogin}/>
-      <div style={{ width: '100vw',  backgroundColor: 'green', overflowX: 'hidden' }}>
+      <div style={{ width: '100vw',  backgroundColor: 'white', overflowX: 'hidden', borderBottom: '1px solid #CDD0DC'}}>
         <Container sx={{m: '0 86px'}}>
           <Tabs
             value={activeTab}
@@ -24,25 +43,26 @@ const Home = ({ isLogin }) => {
             textColor="inherit" 
           >
             <Tab label="모든 장학" sx={tabStyle(activeTab === 0)} />
-            <Tab label="추천 장학" sx={tabStyle(activeTab === 1)} />
+            <Tab label="맞춤형 장학" sx={tabStyle(activeTab === 1)} />
             <Tab label="관심 장학" sx={tabStyle(activeTab === 2)} />
           </Tabs>
         </Container>
       </div>
-      <div style={{ padding: '30px 120px 50px', backgroundColor: '#F9F9F9' }}>
-        {activeTab === 0 && <AllNotices />}
-        {activeTab === 1 && <CustomNotices />}
-        {activeTab === 2 && <FavNotices />}
+      <div style={{ padding: '30px 120px 50px', backgroundColor: '#white' }}>
+        {activeTab === 0 && <AllNotices scholarships={scholarships} toggleFavorite={toggleFavorite} />}
+        {activeTab === 1 && <CustomNotices scholarships={scholarships} toggleFavorite={toggleFavorite} />}
+        {activeTab === 2 && <FavNotices scholarships={scholarships} toggleFavorite={toggleFavorite} />}
       </div>
     </div>
   );
 };
 
 const tabStyle = (isActive) => ({
-  color: isActive ? 'white' : 'lightgray',
-  fontWeight: isActive ? 700 : 500,
+  color: isActive ? '#4D755B' : 'black',
+  fontWeight: isActive ? 600 : 600,
   fontSize: '16px',
   padding: '18px 10px',
+  borderBottom: isActive ? '2px solid #4D755B' : 'none',
 });
 
 export default Home;
